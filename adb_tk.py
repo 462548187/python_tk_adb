@@ -258,7 +258,7 @@ if __name__ == '__main__':
             tkinter.Label(root, text='日志存放路径:').grid(row=16, column=3)
             log_t = tkinter.Text(root, height=1, width=30)
             log_t.grid(row=16, column=4)
-            log_t.insert('0.0', 'F:\\monekey.txt')
+            log_t.insert('0.0', 'D:\\monekey.txt')
             btn_monkey = tkinter.Button(root, text='启动Monkey测试', font=("黑体", 15, "bold"), command=monkey_app)
             btn_monkey.grid(row=17, column=3)
             root.mainloop()
