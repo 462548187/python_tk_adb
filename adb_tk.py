@@ -172,8 +172,8 @@ if __name__ == '__main__':
         if status_shebei == 'device':
             root = tkinter.Tk()
             root.title('安卓adb小工具')
-            # root.geometry("1000x900")
-            # root.resizable(width=False, height=False)
+            root.geometry("1000x800")
+            root.resizable(width=False, height=False)
             tkinter.Label(root, text='性能参数展示', fg='red', font=("黑体", 15, "bold"), ).grid(row=0, column=3)
             cpu_t = tkinter.Text(root, height=5, width=30)
             cpu_t.grid(row=1, column=2)
@@ -260,7 +260,8 @@ if __name__ == '__main__':
             log_t.grid(row=16, column=4)
             log_t.insert('0.0', 'D:\\monekey.txt')
             btn_monkey = tkinter.Button(root, text='启动Monkey测试', font=("黑体", 15, "bold"), command=monkey_app)
-            btn_monkey.grid(row=17, column=3)
+            btn_monkey.place(x=350, y=700)
+            # btn_monkey.grid(row=17, column=3)
             root.mainloop()
         else:
             LOG('设备未连接或者连接异常!目前连接状态:%s' % status_shebei)
